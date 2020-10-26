@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "src/bandwidth_monitor"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.vscode": true,
+			"**/.venv": true,
+			"**/*.egg-info": true,
+			"**/__pycache__": true
+		},
+
+		"python.pythonPath": ".venv\\Scripts\\python.exe",
+		"python.linting.flake8Enabled": true,
+		"python.linting.pylintEnabled": false,
+		"python.formatting.provider": "yapf",
+		"python.languageServer": "Pylance",
+
+		"editor.detectIndentation": false,
+		"editor.insertSpaces": false
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.vscode-pylance",
+			"lextudio.restructuredtext"
+		]
+	}
+}

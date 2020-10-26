@@ -1,0 +1,9 @@
+# various devtools for vscode and ergonomics
+ipython ~=7.18.0
+flake8 ~=3.8.0
+rope ~=0.18.0
+yapf ~=0.30.0
+rstcheck ~=3.3.0
+
+# the project
+--editable .
