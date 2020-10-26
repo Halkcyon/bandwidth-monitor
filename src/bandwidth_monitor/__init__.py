@@ -21,10 +21,10 @@ Data = namedtuple('Data', ('timestamp', 'download', 'upload', 'ping', 'server_id
 Server = namedtuple('Server', ('id', 'url', 'lat', 'lon', 'loc'))
 
 logging.basicConfig(
-	level=logging.INFO,
-	stream=sys.stdout,
-	format='%(asctime)s %(message)s',
-	datefmt='%Y-%m-%d %H:%M',
+    level=logging.INFO,
+    stream=sys.stdout,
+    format='%(asctime)s %(message)s',
+    datefmt='%Y-%m-%d %H:%M',
 )
 logger = logging.getLogger()
 
@@ -68,31 +68,32 @@ def get_speeds() -> speedtest.SpeedtestResults:
 	test.upload()
 
 	server = Server(
-		test.results.server['id'],
-		test.results.server['url'],
-		test.results.server['lat'],
-		test.results.server['lon'],
-		f"{test.results.server['name']}, {test.results.server['country']}",
+	    test.results.server['id'],
+	    test.results.server['url'],
+	    test.results.server['lat'],
+	    test.results.server['lon'],
+	    f"{test.results.server['name']}, {test.results.server['country']}",
 	)
 
 	data = Data(
-		round(datetime.fromisoformat(test.results.timestamp[:-1]).timestamp()),
-		round(test.results.download),
-		round(test.results.upload),
-		round(test.results.ping),
-		server.id,
+	    round(datetime.fromisoformat(test.results.timestamp[:-1]).timestamp()),
+	    round(test.results.download),
+	    round(test.results.upload),
+	    round(test.results.ping),
+	    server.id,
 	)
 
 	conn = sqlite3.connect(_db)
 	crsr = conn.cursor()
 
-	res = crsr.execute('SELECT id FROM server WHERE id = ?', (server.id,)).fetchone()
+	res = crsr.execute('SELECT id FROM server WHERE id = ?', (server.id, )).fetchone()
 	if res is None:
 		logger.info(f"Creating server:\n{pformat(server._asdict(), sort_dicts=False)}")
 		crsr.execute('INSERT INTO server VALUES (?, ?, ?, ?, ?);', server)
 		conn.commit()
 
-	crsr.execute('''
+	crsr.execute(
+	    '''
 		INSERT INTO data (timestamp, download_speed, upload_speed, latency, server_id)
 		VALUES (?, ?, ?, ?, ?);
 	''', data)
@@ -112,4 +113,4 @@ def run_schedule() -> NoReturn:
 	schedule.every().hour.at(':00').do(get_speeds)
 	while True:
 		schedule.run_pending()
-		time.sleep(60*5)
+		time.sleep(60 * 5)

@@ -25,7 +25,18 @@
 		"python.languageServer": "Pylance",
 
 		"editor.detectIndentation": false,
-		"editor.insertSpaces": false
+		"editor.insertSpaces": false,
+		"editor.renderControlCharacters": true,
+		"editor.renderWhitespace": "boundary",
+		"editor.rulers": [80, 100],
+
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true,
+		"files.trimTrailingWhitespace": true,
+
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		"githubPullRequests.telemetry.enabled": false
 	},
 	"extensions": {
 		"recommendations": [
