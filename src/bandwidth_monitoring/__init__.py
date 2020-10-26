@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+__all__ = ('get_speeds', 'run_schedule')
+
 import logging
 import sqlite3
 import sys
@@ -25,7 +27,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 
-_db = Path('app.db')
+_db = Path('bandwidth.db')
 if not _db.exists():
     logger.info('Initializing database schema')
 

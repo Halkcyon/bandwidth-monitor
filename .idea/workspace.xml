@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d6310f3-8bdd-4452-b00c-b50a32a77777" name="Default Changelist" comment="" />
+    <list default="true" id="7d6310f3-8bdd-4452-b00c-b50a32a77777" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +37,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jNYvRbdeeuprGs3S7sTHshgalu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,11 +47,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
@@ -40,7 +67,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="false" />
-      <option name="SCRIPT_NAME" value="app" />
+      <option name="SCRIPT_NAME" value="bandwidth_monitoring" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -61,11 +88,22 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2661" y="357" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603729247187">
+    <state x="2661" y="357" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603733072516">
       <screen x="2560" y="-2" width="2560" height="1410" />
     </state>
-    <state x="2661" y="357" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.-2.2560.1410/0.0.2560.1410@2560.-2.2560.1410" timestamp="1603729247187" />
+    <state x="2661" y="357" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.-2.2560.1410/0.0.2560.1410@2560.-2.2560.1410" timestamp="1603733072516" />
     <state x="4236" y="508" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603728015968">
       <screen x="2560" y="-2" width="2560" height="1410" />
     </state>
@@ -84,11 +122,11 @@
     </state>
     <state x="1700" y="445" key="FileChooserDialogImpl/2560.-2.2560.1410/0.0.2560.1410@0.0.2560.1410" timestamp="1603646398366" />
     <state x="4260" y="443" key="FileChooserDialogImpl/2560.-2.2560.1410/0.0.2560.1410@2560.-2.2560.1410" timestamp="1603728335517" />
-    <state x="2702" y="530" key="SettingsEditor" timestamp="1603728424302">
+    <state x="2733" y="463" key="SettingsEditor" timestamp="1603732967459">
       <screen x="2560" y="-2" width="2560" height="1410" />
     </state>
     <state x="1421" y="349" key="SettingsEditor/2560.-2.2560.1410/0.0.2560.1410@0.0.2560.1410" timestamp="1603660176816" />
-    <state x="2702" y="530" key="SettingsEditor/2560.-2.2560.1410/0.0.2560.1410@2560.-2.2560.1410" timestamp="1603728424302" />
+    <state x="2733" y="463" key="SettingsEditor/2560.-2.2560.1410/0.0.2560.1410@2560.-2.2560.1410" timestamp="1603732967459" />
     <state x="1583" y="323" width="672" height="678" key="search.everywhere.popup" timestamp="1603659555853">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>

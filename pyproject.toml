@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "app"
+name = "bandwidth_monitoring"
 version = "0.1.0"
 description = ""
 authors = ["Maximilian Burszley <mburszley@gmail.com>"]
