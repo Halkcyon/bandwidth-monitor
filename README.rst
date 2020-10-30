@@ -14,7 +14,7 @@ Usage
 
 .. code-block:: bash
 
-	$ pip install --user git+https://github.com/mburszley/bandwidth-monitoring.git@main#egg=bandwidth-monitor
+	$ pip install --user git+https://github.com/mburszley/bandwidth-monitor.git@main#egg=bandwidth-monitor
 	$ python -m bandwidth_monitor
 
 ..

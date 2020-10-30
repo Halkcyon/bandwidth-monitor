@@ -6,5 +6,10 @@ rope ~=0.18.0
 yapf ~=0.30.0
 rstcheck ~=3.3.0
 
+# needed for build and distribution
+setuptools ~=50.3.0
+wheel ~=0.35.0
+twine ~=3.2.0
+
 # the project
 --editable .
