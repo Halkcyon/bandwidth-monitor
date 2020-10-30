@@ -1,0 +1,15 @@
+# various devtools for vscode and ergonomics
+ipython ~=7.18.0
+flake8 ~=3.8.0
+flake8-tabs ~=2.2.0
+rope ~=0.18.0
+yapf ~=0.30.0
+rstcheck ~=3.3.0
+
+# needed for build and distribution
+setuptools ~=50.3.0
+wheel ~=0.35.0
+twine ~=3.2.0
+
+# the project
+--editable .
